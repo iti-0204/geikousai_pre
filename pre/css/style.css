@@ -1,164 +1,218 @@
 @charset "UTF-8";
-p, h2{
-    position: relative;
-    font-family: 'Hiragino Maru Gothic Pro';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
-    text-align: center;
-}
-h1{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 48px;
-    text-align: center;
-    margin-bottom: 0;
-}
-h2{
-    font-size: 18px;
-}
-hr{
-    width: 333px;
-    height: 1px;
-    margin: 0;
-    color: #B32E81;
-    background-color: #B32E81;
-    border: 0 none;
-}
-.s-text{
-    font-size: 12px;
-    line-height: 15px;
+
+header {
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* width: 390px; */
+  width: 100%;
+  height: 68px;
+  left: 0px;
+  top: 0px;
+  padding: 0 20px;
+  background: rgba(255, 238, 239, 0%);
+  z-index: 1;
+  border: 2px solid #b32e81;
 }
 
-body{
-    margin: 0 auto;
-}
-header{
-    box-sizing: border-box;
-
-    position: absolute;
-    width: 390px;
-    height: 68px;
-    left: 0px;
-    top: 0px;
-    padding: 34px 28px 6px 28px;
-    background: rgba(255, 238, 239, 0%);
-    z-index: 1;
-}
-header p{
-    width: 334px;
-    height: 28px;
-    margin: 0, 0;
-    font-size: 18px;
-    font-weight: 700;
-    color: #ffffff;
-    text-align: left;
-}
-main{
-    box-sizing: border-box;
-
-    position: relative;
-    width: 390px;
-    height: 4040px;
-}
-#bg{
-    position: absolute;
-    width: 390px;
-    height: 4040px;
-    background-color: #efeeef;
-    z-index: 0;
-}
-#sectionc{
-    box-sizing: border-box;
-
-    position: fixed;
-    bottom: 0;
-    width: 390px;
-    height: 129px;
-    background: rgba(255, 255, 239, 0%);;
-    padding: 49px 39px;
+header p {
+  width: 50%;
+  height: 28px;
+  margin: 0px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: left;
+  border: 2px solid #b32e81;
 }
 
-#sectionc p{
-    width: 330px;
-    height: 67px;
-    font-weight: 700;
-}
-#sectionc .s-text{
-    text-align: right;
+/* ハンバーガーメニュー */
+.menu-button {
+  background-color: #efeeef;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  right: 0%;
+  border-radius: 50%;
 }
 
-#section1{
-    box-sizing: border-box;
+.menu-button span {
+  background-color: #d8660f;
+  display: block;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 5%;
+  width: 50%;
+}
 
-    position: relative;
-    width: 390px;
-    height: 843px;
-    /* background: radial-gradient(976.86% 167.1% at 100% 101.05%, #B32E81 0%, #F7EE4F 100%) */
+.menu-button span:nth-child(1) {
+  top: 30%;
 }
-#section2{
-    box-sizing: border-box;
+.menu-button span:nth-child(2) {
+  top: 50%;
+}
 
-    position: relative;
-    width: 390px;
-    height: 569px;
-    background: rgba(255, 255, 255, 80%);
-    padding: 29px 28px;
+.menu-button span:nth-child(3) {
+  top:70%;
 }
-#section2 h1{
-    width: 333px;
-    height: 49.54px;
 
-    background: radial-gradient(90.12% 382.11% at 39.52% 28.45%, #B32E81 0%, #F7ED4E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+/* p,
+h2 {
+  position: relative;
+  font-family: "Hiragino Maru Gothic Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+} */
+h1 {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  margin-bottom: 0;
 }
-#section2 p,#section2 h2{
-    color: #B32E81;
+h2 {
+  font-size: 18px;
 }
-#section2 h2{
-    margin-top: 0;
+hr {
+  width: 333px;
+  height: 1px;
+  margin: 0;
+  color: #b32e81;
+  background-color: #b32e81;
+  border: 0 none;
 }
-#section3{
-    box-sizing: border-box;
+.s-text {
+  font-size: 12px;
+  line-height: 15px;
+}
 
-    position: relative;
-    width: 390px;
-    height: 560px;
-    padding: 52px 29px;
+body {
+  margin: 0 auto;
 }
-#section3 h1{
-    background: radial-gradient(90.12% 382.11% at 39.52% 28.45%, #B32E81 0%, #F7ED4E 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-#section3 h2{
-    margin-top: 0;
-    color: #B32E81;
-}
-#hr-bottom{
-    position: absolute;
-    bottom: 39px;
-}
-#section4{
-    box-sizing: border-box;
 
-    position: relative;
-    width: 390px;
-    height: 538px;
-    padding: 49px 27px;
-    background: linear-gradient(261.31deg, #F7EE4F -44.66%, #B32E81 111.36%);
+main {
+  box-sizing: border-box;
+
+  position: relative;
+  width: 390px;
+  height: 4040px;
+}
+#bg {
+  position: absolute;
+  width: 390px;
+  height: 4040px;
+  background-color: #efeeef;
+  z-index: 0;
+}
+#sectionc {
+  box-sizing: border-box;
+
+  position: fixed;
+  bottom: 0;
+  width: 390px;
+  height: 129px;
+  background: rgba(255, 255, 239, 0%);
+  padding: 49px 39px;
+}
+
+#sectionc p {
+  width: 330px;
+  height: 67px;
+  font-weight: 700;
+}
+#sectionc .s-text {
+  text-align: right;
+}
+
+#section1 {
+  box-sizing: border-box;
+
+  position: relative;
+  width: 390px;
+  height: 843px;
+  /* background: radial-gradient(976.86% 167.1% at 100% 101.05%, #B32E81 0%, #F7EE4F 100%) */
+}
+#section2 {
+  box-sizing: border-box;
+
+  position: relative;
+  width: 390px;
+  height: 569px;
+  background: rgba(255, 255, 255, 80%);
+  padding: 29px 28px;
+}
+#section2 h1 {
+  width: 333px;
+  height: 49.54px;
+
+  background: radial-gradient(
+      90.12% 382.11% at 39.52% 28.45%,
+      #b32e81 0%,
+      #f7ed4e 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#section2 p,
+#section2 h2 {
+  color: #b32e81;
+}
+#section2 h2 {
+  margin-top: 0;
+}
+#section3 {
+  box-sizing: border-box;
+
+  position: relative;
+  width: 390px;
+  height: 560px;
+  padding: 52px 29px;
+}
+#section3 h1 {
+  background: radial-gradient(
+      90.12% 382.11% at 39.52% 28.45%,
+      #b32e81 0%,
+      #f7ed4e 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+#section3 h2 {
+  margin-top: 0;
+  color: #b32e81;
+}
+#hr-bottom {
+  position: absolute;
+  bottom: 39px;
+}
+#section4 {
+  box-sizing: border-box;
+
+  position: relative;
+  width: 390px;
+  height: 538px;
+  padding: 49px 27px;
+  background: linear-gradient(261.31deg, #f7ee4f -44.66%, #b32e81 111.36%);
 }
 #section4 h1,
 #section4 h2,
-#section4 p{
-    color: #ffffff;
+#section4 p {
+  color: #ffffff;
 }
-#section4 h2{
-    margin-top: 0;
+#section4 h2 {
+  margin-top: 0;
 }
