@@ -145,6 +145,33 @@ main {
   top: 0;
   bottom: 0;
   margin: auto;
+  /* animation: color-change 1s infinite; */
+}
+
+@keyframes color-change {
+  0% {
+    background-color: #f59f77;
+  }
+  50% {
+    background-color: #83553f;
+  }
+  50% {
+    background-color: #080504;
+  }
+}
+
+.around-light-grandchild-2n {
+  position: absolute;
+  border-radius: 50%;
+  background-color: #000000;
+  width: 10px;
+  height: 10px;
+  /* z-index: 3; */
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 
 .around-light-grandchild-3 {
