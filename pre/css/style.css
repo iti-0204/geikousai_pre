@@ -107,10 +107,16 @@ main {
   height: 4040px;
 }
 
-.around-light-parent {
+.around-light-parent-left {
   position: absolute;
   top: 1%;
   left: 1%;
+}
+
+.around-light-parent-right {
+  position: absolute;
+  top: 1%;
+  right: 1%;
 }
 
 .around-light-child {
@@ -126,7 +132,7 @@ main {
 .around-light-grandchild-1 {
   position: absolute;
   border-radius: 50%;
-  background-color: #ca549e;
+  /* background-color: #ca549e; */
   width: 10px;
   height: 10px;
   filter: blur(1.6px);
@@ -163,15 +169,16 @@ main {
 .around-light-grandchild-2n {
   position: absolute;
   border-radius: 50%;
-  background-color: #000000;
-  width: 10px;
-  height: 10px;
-  /* z-index: 3; */
+  background-color: #9e9d9b70;
+  width: 8px;
+  height: 8px;
+  z-index: 3;
   right: 0;
   left: 0;
   top: 0;
   bottom: 0;
   margin: auto;
+  box-shadow: 0 0 50px 2px #000000;
 }
 
 .around-light-grandchild-3 {
@@ -186,6 +193,7 @@ main {
   top: 0;
   bottom: 0;
   margin: auto;
+  box-shadow: 0 0 50px 4px #feda91;
 }
 
 #bg {
